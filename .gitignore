@@ -2,6 +2,7 @@ gmail_api/credentials/*.json
 
 # Jupyter Notebook files
 .ipynb_checkpoints/
+.ipynb_checkpoints/*.ipynb
 *.ipynb
 
 # Byte-compiled / optimized / DLL files
