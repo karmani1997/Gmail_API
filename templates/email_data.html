@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EMAILS</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <style>
+        /* Center the header and its parent element
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+        } */
+      </style>
+
+  </head>
+  <body>
+    <h1>Emails</h1>
+    <p>Search Result For Keywords <strong>"{{ data['keyword'] }}"</strong></p>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>From</th>
+                <th></th>
+              <th>Subject</th>
+              <th></th>
+              <th>Body</th>
+            </tr>
+          </thead>
+
+    </thead>
+    <tbody>
+      {% for item in data['data'] %}
+      <tr>
+        <td>{{ item['From'] }}</td>
+        <td></td>
+        <td>{{ item['subject'] }}</td>
+        <td></td>
+        <td>{{ item['msg'] }}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+
+    </table>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </body>
+</html>

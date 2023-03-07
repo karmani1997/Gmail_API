@@ -1,0 +1,37 @@
+gmail_api/credentials/*.json
+
+# Jupyter Notebook files
+.ipynb_checkpoints/
+*.ipynb
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# local env
+.env
+
+# Log files
+*.log
+
+# IDE files
+.vscode/
+.idea/
+
+# Dependency directories
+venv/
+env/
+lib/
+include/
+bin/
+
+# Compiled source
+*.pyc
+*.pyo
+*.pyd
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
