@@ -36,14 +36,9 @@ with the front-end in flask api so that user can send the email from webpage and
 
 	```
 	python3 app.py
-```
+	```
 * Run the test cases
-```
+
+	```
 	python3 -m unittest tests.test_gmail
-```
-
-
-
-
-
-
+	```
